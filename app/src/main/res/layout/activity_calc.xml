@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_calc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.delano.coolcalc.CalcActivity"
+    android:background="@android:color/background_light">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:background="@android:color/holo_blue_bright">
+
+            <TextView
+                android:text="567"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/resultsText"
+                android:textSize="50dp"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="50dp"
+                android:textColorLink="@android:color/white"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="4"
+            android:layout_height="87dp">
+
+            <Button
+                android:text="7"
+                android:id="@+id/sevenBtn"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:layout_width="96dp"
+                android:layout_height="96dp" />
+
+            <Button
+                android:text="8"
+                android:id="@+id/eightBtn"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:layout_width="96dp"
+                android:layout_height="96dp" />
+
+            <Button
+                android:text="9"
+                android:id="@+id/nineBtn"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:layout_width="96dp"
+                android:layout_height="96dp" />
+
+            <ImageButton
+                app:srcCompat="@drawable/divide"
+                android:id="@+id/divideBtn"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/divide"
+                android:layout_width="96dp"
+                android:layout_height="96dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="4"
+            android:layout_height="87dp">
+
+            <Button
+                android:text="4"
+                android:id="@+id/fourBtn"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:layout_width="96dp"
+                android:layout_height="96dp" />
+
+            <Button
+                android:text="5"
+                android:id="@+id/fiveBtn"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:layout_width="96dp"
+                android:layout_height="96dp" />
+
+            <Button
+                android:text="6"
+                android:id="@+id/sixBtn"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:layout_width="96dp"
+                android:layout_height="96dp" />
+
+            <ImageButton
+                android:id="@+id/multiplyBtn"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/multiply"
+                android:layout_width="96dp"
+                android:layout_height="96dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="4"
+            android:layout_height="87dp">
+
+        <Button
+            android:text="1"
+            android:id="@+id/oneBtn"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:layout_width="96dp"
+            android:layout_height="96dp" />
+
+        <Button
+            android:text="2"
+            android:id="@+id/twoBtn"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:layout_width="96dp"
+            android:layout_height="96dp" />
+
+        <Button
+            android:text="3"
+            android:id="@+id/threeBtn"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:layout_width="96dp"
+            android:layout_height="96dp" />
+
+        <ImageButton
+            android:id="@+id/substractBtn"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/subtract"
+            android:layout_width="96dp"
+            android:layout_height="96dp" />
+
+    </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="87dp">
+
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_width="192dp">
+
+                <Button
+                    android:text="Clear"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/clearBtn"
+                    android:layout_weight="1"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/holo_blue_bright"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+            <Button
+                android:text="0"
+                android:id="@+id/zeroBtn"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <ImageButton
+                android:id="@+id/addBtn"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/add"
+                android:layout_width="96dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/equal"
+        android:id="@+id/calcBtn"
+        android:background="@android:color/transparent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:paddingTop="110dp"
+        android:paddingRight="15dp"
+        android:src="@drawable/equal" />
+
+</RelativeLayout>
